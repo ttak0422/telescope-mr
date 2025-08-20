@@ -27,5 +27,8 @@ return telescope.register_extension({
 		mrw = function(opts)
 			create_mr_picker(opts, "MRW", vim.fn["mr#mrw#list"])
 		end,
+		mrd = function(opts)
+			create_mr_picker(opts, "MRD", vim.fn["mr#mrd#list"])
+		end,
 	},
 })
