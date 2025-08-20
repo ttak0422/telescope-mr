@@ -12,6 +12,7 @@ local function create_mr_picker(opts, title, list_function)
 				results = list_function(),
 			}),
 			sorter = conf.generic_sorter(opts),
+			previewer = conf.file_previewer(opts),
 		})
 		:find()
 end
